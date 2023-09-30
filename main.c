@@ -1,16 +1,16 @@
 #include "main.h"
 
-int main(int argv, char **argc)
+int main(int argc, char **argv)
 {
   // Checking the number of arguments for correct usage
-  if (argv != 2)
+  if (argc != 2)
   {
-    fprintf(stderr, "usage: %s image\n", argc[0]);
+    fprintf(stderr, "usage: %s image\n", argv[0]);
     return 1;
   }
 
   // Load the input image
-  SDL_Surface *surface = IMG_Load(argc[1]);
+  SDL_Surface *surface = IMG_Load(argv[1]);
   if (surface == NULL)
   {
     fprintf(stderr, "IMG_Load: %s\n", SDL_GetError());

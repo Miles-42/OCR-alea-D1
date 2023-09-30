@@ -33,3 +33,5 @@ $(EXECUTABLE): $(OBJECTS)
 
 clean:
 	rm -f $(OBJECTS) $(EXECUTABLE)
+	rm -f output/steps/*
+	rm -f output/tiles/*
