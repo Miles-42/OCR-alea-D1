@@ -1,0 +1,119 @@
+/* Header styling */
+.header {
+    position: fixed;
+    z-index: 100;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    color: #343a40;
+    /* Dark text for contrast */
+    width: 100%;
+    align-self: auto;
+}
+
+.container {
+    margin-top: 30px;
+    /* Adjust the value as needed */
+    padding: 20px;
+}
+
+.logo {
+    height: 75px;
+    /* Adjust as needed */
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Prevent horizontal scrollbar */
+    padding-bottom: 10px;
+    padding-top: 80px;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    /* Changed to fixed */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('Images/DALL·E.png');
+    /* Your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+/* If you still want to keep the dark mode: */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Dark overlay, adjust transparency as needed */
+    z-index: -1;
+}
+
+.text-container {
+    background-color: rgba(0, 0, 0, 0.75);
+    /* Black background with 50% opacity */
+    padding: 30px;
+    margin: 20px;
+    /* Add some padding around the text */
+    border-radius: 10px;
+    /* Optional: for rounded corners */
+    color: white;
+    /* Ensures the text is white for better contrast */
+}
+
+p,
+ul {
+    font-size: 20px;
+}
+
+a {
+    margin-right: 10px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 20px 30px;
+    font-size: 28px;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    padding: 20px 30px;
+    font-size: 28px;
+}
+
+
+/* Card styling for team members */
+.card {
+    background-color: #454d55;
+    /* Slightly lighter than the main background */
+    color: #fff;
+    height: 100%;
+    z-index: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+}

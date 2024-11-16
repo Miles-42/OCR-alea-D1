@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
   solveSudoku(grid, 0, 0);
 
   writer(argv[1], grid);
-  reconstruction_image(grid, grid_actu);
+  // reconstruction_image(grid, grid_actu);
 }
 
 void print(int arr[9][9])

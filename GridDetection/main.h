@@ -1,0 +1,13 @@
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_image.h>
+#include <err.h>
+#include "../GridDetection/hough_transform.h"
+#include "../GridDetection/local_threshold.h"
+#include "../GridDetection/sobel.h"
+#include "../Traitement/contrast.h"
+#include "../Traitement/grayscale.h"
+#include "../Traitement/noise_reduction.h"
+#include "../utils/lines.h"
+#include "../utils/linked_list.h"
+#include "../utils/splitting.h"
+#include "../utils/utils.h"
